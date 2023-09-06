@@ -621,3 +621,187 @@ footer{
   .icon-wrapper .icon:hover{
       color: var(--clr-orange);
   }
+
+
+  @media (max-width: 1150px){
+  .navbar{
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+
+  .hero-section{
+      flex-direction: column;
+      gap: 0;
+      padding-bottom: 5rem;
+  }
+
+  .hero-section .hero-section-left{
+      align-items: center;
+  }
+
+  .hero-section .hero-section-left .hero-section-description{
+      text-align: center;
+  }
+
+  .hero-section-right{
+      scale: 0.7;
+  }
+
+  .hero-section .btn{
+      display: none;
+  }
+
+  .hero-section .btn{
+      display: block;
+      margin-top: -2rem;
+  }
+
+  .skills-heading span{
+      font-size: 5rem;
+  }
+  
+  .project-section .project-container{
+      gap: 6rem;
+  }
+
+  .project-container .project-card{
+      width: 90%;
+      height: 45rem;
+      margin: 0 auto;
+  }
+
+  .project-content h2{
+      font-size: 4rem;
+  }
+
+  .project-card .project-content{
+      max-width: 90%;
+  }
+
+  .project-card:nth-child(even) .project-content{
+      left: 10%;
+      right: 0;
+  }
+
+  .project-card .project-number{
+      display: none;
+  }
+
+  .textarea{
+      height: 200px;
+  }
+}
+
+@media (max-width: 900px){
+.project-container .project-card{
+    width: 95%;
+    height: 35rem;
+}
+
+.project-card .btn{
+    padding: 1rem 2rem;
+}
+
+.skills-container{
+    flex-direction: column;
+}
+
+.skills-container-left, .skill-container-right{
+    width: 100%;
+}
+
+.skills-container-right img{
+    width: 6rem;
+}
+
+footer{
+    padding: 1rem 0;
+}
+
+.footer-wrapper{
+    flex-direction: column;
+    gap: 3rem;
+}
+
+}
+
+
+@media (max-width: 650px){
+    .navbar{ 
+        background: var(--clr-white);
+        position: sticky;
+        top: 0;
+        z-index: 998;
+        padding-top: 1rem;
+    }
+
+    .navbar .div{
+        display: none;
+    }
+
+    .navbar .logo-container {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .navbar .logo-div .name {
+        font-size: 2rem;
+        margin-left: -1.8rem;
+    }
+
+    .hero-section{
+        padding-bottom: 0;
+        margin: 2.5rem 0;
+    }
+
+    .hero-section .hero-section-left{
+        gap: 2rem;
+    }
+
+    .hero-section-left .hero-section-sub-heading, .hero-section-left{
+        font-size: 2rem;
+    }
+
+    .skills-container span,
+    .skills-heading{
+        font-size: 3rem;
+    }
+        
+    .project-container .project-card{
+        height: 30rem;
+    }
+
+    .project-content .project-skills-container img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .project-card .project-content{
+        padding: 0;
+    }
+
+    .project-content h2{
+        font-size: 2rem;
+    }
+
+    .project-content p {
+        font-size: 1.3rem;
+        max-width: 90%;
+    }
+
+    .project-card .btn{
+        padding: 1rem 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .project-buttons .icons{
+        font-size: 3rem;
+    }
+   
+    .project-card:nth-child(n) .project-content{
+        left: 7%;
+    }
+
+    .skills-container{
+      padding: 4rem 0;
+    }
+  }
